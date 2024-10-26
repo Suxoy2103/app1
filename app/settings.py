@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import sys
 
+from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL
+
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -131,6 +133,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
   BASE_DIR / 'static'
   ]
+
+MEDIA_URL = 'media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
 INTERNAL_IPS = [
