@@ -74,7 +74,7 @@ def profile(request):
 
 
 def users_cart(request):
-    return render(request, 'users/')
+    return render(request, 'users/users_cart.html')
 
 @login_required
 def logout(request):
